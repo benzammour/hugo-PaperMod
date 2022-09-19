@@ -255,6 +255,17 @@
     color: var(--secondary);
     font-size: 14px;
     font-weight: normal;
+    display: inline;
+}
+
+.post-content figcaption::before {
+    counter-increment: figure;
+    content: "Figure " counter(figure) ": ";
+    display: inline;
+    color: var(--primary);
+    font-size: 14px;
+    font-weight: bold;
+    margin: 8px 0 16px;
 }
 
 .toc {
